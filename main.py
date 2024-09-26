@@ -1,6 +1,6 @@
 from flask import render_template, request
-from website import create_app
-from website.utils import connect_to_mysql, query_county
+from src import create_app
+from src.utils import connect_to_mysql, query_county
 import requests
 
 app = create_app()
