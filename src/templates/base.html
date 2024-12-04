@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>{% block title %} {% endblock %}</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <nav>
+        <a href="#">FlaskApp</a>
+        <a href="about">About</a>
+    </nav>
+    <hr>
+    <div class="content">   
+        {% block content %} 
+        <h1>Content block</h1>
+        {% endblock %}
+    </div>
 </body>
 </html>
